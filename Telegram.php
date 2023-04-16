@@ -6,6 +6,7 @@ class Telegram
     public function __construct($token){
         $this->token = $token;
         $this->url = "https://api.telegram.org/bot$token/";
+        
     }
 
     public function sendMessage(string $msg, int $chat) : bool
